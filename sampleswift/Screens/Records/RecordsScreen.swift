@@ -9,9 +9,14 @@ import SwiftUI
 
 struct RecordsScreen:View{
     
+    @State var expanded = true
+    
     var body:some View{
         VStack{
-            Spacer()
+            
+            RecordsSectionHeader(title: "Heritage Records",
+                                 recordCount: 17,
+                                 isExpanded: $expanded)
             Text("Records")
             Spacer()
         }.frame(maxWidth:.infinity,maxHeight: .infinity)
