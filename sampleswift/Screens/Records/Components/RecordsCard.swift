@@ -14,6 +14,11 @@ struct RecordsCard: View{
     
     var body : some View{
         VStack{
+            topInfoSection
+            highlightSection
+            tagSection
+            descriptionSection
+            footerSection
             
         }.padding(20)
             .background(Color.white)
@@ -28,6 +33,54 @@ struct RecordsCard: View{
 
 private extension RecordsCard{
     var topInfoSection: some View {
-        h
+        HStack{
+            
+        }
     }
+}
+
+
+private extension RecordsCard{
+    var highlightSection : some View {
+        VStack{
+            
+        }
+    }
+}
+
+private extension RecordsCard  {
+    var tagSection : some View {
+        VStack{
+            
+        }
+    }
+}
+
+
+private extension RecordsCard{
+    var descriptionSection : some View{
+        Text(record.description)
+    }
+}
+
+
+private extension RecordsCard{
+    var footerSection: some View {
+        HStack{
+            
+        }
+    }
+}
+
+
+#Preview {
+    RecordsCard(record: Record(
+        id:UUID(),
+        title: "Abdulla Al Kaabi",
+        category: .people,
+                   location: "Al Ain",
+                   description: "Experienced heritage professional overseeing development control processes and comprehensive documentation of cultural heritage sites in the Al Ain region.",
+                   updatedAt: Date(),
+                   tags: ["Heritage Management"]
+    ), onTap:{})
 }
