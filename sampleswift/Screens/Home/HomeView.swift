@@ -31,8 +31,7 @@ struct HomeView: View {
     )
     var body: some View {
         ZStack{
-        
-            AppRouter(selectedtab: selectedTab, mapPosition: position)
+           AppRouter(selectedtab: selectedTab, mapPosition: position)
             if selectedTab == .map {
                 MapFloatingButtons()
             }

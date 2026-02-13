@@ -25,6 +25,7 @@
 		87AD666F2F2B908300E19D3B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AD666C2F2B908300E19D3B /* HomeView.swift */; };
 		87AD66702F2B908300E19D3B /* sampleswiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AD666D2F2B908300E19D3B /* sampleswiftApp.swift */; };
 		87AD66712F2B908300E19D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87AD666B2F2B908300E19D3B /* Assets.xcassets */; };
+		A38449A82F3EF7B700792A65 /* RecordsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38449A72F3EF7B700792A65 /* RecordsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		87AD666B2F2B908300E19D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87AD666C2F2B908300E19D3B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		87AD666D2F2B908300E19D3B /* sampleswiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleswiftApp.swift; sourceTree = "<group>"; };
+		A38449A72F3EF7B700792A65 /* RecordsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			children = (
 				8776C85E2F33547B00753063 /* RecordsCard.swift */,
 				8776C8602F33548700753063 /* RecordsSectionHeader.swift */,
+				A38449A72F3EF7B700792A65 /* RecordsListView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				870E44272F2CBEA90024E5E0 /* MapFloatingButtons.swift in Sources */,
 				870E442F2F2CC0DE0024E5E0 /* ProfileScreen.swift in Sources */,
 				87AD666F2F2B908300E19D3B /* HomeView.swift in Sources */,
+				A38449A82F3EF7B700792A65 /* RecordsListView.swift in Sources */,
 				870E443B2F2CE4E90024E5E0 /* Color+App.swift in Sources */,
 				8776C85C2F3353B500753063 /* RecordsViewModel.swift in Sources */,
 				870E441C2F2CBA470024E5E0 /* MapHeaderView.swift in Sources */,

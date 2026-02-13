@@ -32,8 +32,8 @@ struct RecordsSectionHeader: View {
     
     
     var body : some View {
-        HStack{
-            VStack{
+        HStack(alignment: .top){
+            VStack(alignment: .leading){
                 Text("📋 \(title)").font(.headline)
                 Text("\(recordCount) records found")
                
@@ -52,7 +52,8 @@ struct RecordsSectionHeader: View {
                     .cornerRadius(8)
             }
             
-        }
+        }.padding(.horizontal,12)
+            .padding(.top,16)
     }
 }
 

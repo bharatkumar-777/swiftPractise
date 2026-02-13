@@ -10,6 +10,7 @@ import SwiftUI
 struct RecordsScreen:View{
     
     @State var expanded = true
+    @StateObject private var viewModal = RecordsViewModel()
     
     var body:some View{
         VStack{
@@ -17,9 +18,15 @@ struct RecordsScreen:View{
             RecordsSectionHeader(title: "Heritage Records",
                                  recordCount: 17,
                                  isExpanded: $expanded)
-            Text("Records")
-            Spacer()
+           
+            RecordsListView(records:viewModal.records,onSelect: {
+                record in  print("Selected:", record)
+            })
+            
         }.frame(maxWidth:.infinity,maxHeight: .infinity)
+            .task {
+                await viewModal.fetchRecords()
+            }
 
     }
 }
